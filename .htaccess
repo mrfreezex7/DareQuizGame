@@ -1,0 +1,13 @@
+RewriteEngine on
+DirectoryIndex index.html
+ErrorDocument 404 http://localhost:7777/daregame
+
+
+RewriteRule ^share/([0-9a-zA-Z]+) dare-4-friends.php?shareUrl=$1
+RewriteRule ^go/([0-9a-zA-Z]+) dare-4-friends.php?goUrl=$1
+RewriteRule ^d4f1s/([0-9a-zA-Z]+) dare-4-friends.php?shareUrl=$1
+RewriteRule ^d4f1g/([0-9a-zA-Z]+) dare-4-friends.php?goUrl=$1
+
+RewriteRule ^q4f1s/([0-9a-zA-Z]+) quiz-4-friends.php?shareUrl=$1
+RewriteRule ^q4f1g/([0-9a-zA-Z]+) quiz-4-friends.php?goUrl=$1
+

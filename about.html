@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>About us</title>
+    <meta
+      name="description"
+      content="Create your own quiz and dares, share it with your family & friends and see if they can top the leaderboard?"
+    />
+
+    <meta property="og:site_name" content="dare-quiz-game.com" />
+    <meta property="og:title" content="About us" />
+    <meta
+      property="og:description"
+      content="Create your own quiz and dares, share it with your family and friends and see if they can top the leaderboard?"
+    />
+    <meta property="og:image" content="images/ogImages/dare-quiz-game-og.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dare-quiz-game.com/" />
+
+    <link rel="canonical" href="https://dare-quiz-game.com/" />
+    <meta name="robots" content="index, follow" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+
+    <meta name="theme-color" content="#4C1686" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      .about-page-wrapper {
+        background-color: white;
+        padding: 1em 2em;
+        max-width: 650px;
+        border-radius: 1em;
+        box-shadow: 0 0 10px black;
+        text-align: justify;
+      }
+
+      .about-page-wrapper .h2 {
+        font-size: 3em;
+        color: #997cff;
+      }
+
+      .about-page-wrapper .p {
+        font-size: 1.2em;
+      }
+
+      .about-page-wrapper .contact {
+        font-size: 1.1em;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="nav-container">
+        <!-- navbar -->
+        <div class="topnav" id="myTopnav">
+          <a class="nav-anchor" href="" style="padding: 0.5em 1em 0 1em"
+            ><img
+              style="border-radius: 0.1em"
+              src="images/favicon/favicon-32x32.png"
+              height="32"
+              alt=""
+          /></a>
+          <a class="nav-anchor" href="">Home</a>
+          <a class="nav-anchor active" href="about.html">About Us</a>
+          <a class="nav-anchor" href="privacy.html">Privacy Policy</a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Social
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a
+                class="nav-anchor"
+                href="https://www.instagram.com/dare-quiz-game/"
+                target="_blank"
+                >Instagram</a
+              >
+              <a
+                class="nav-anchor"
+                href="https://www.facebook.com/dare-quiz-game/"
+                target="_blank"
+                >Facebook</a
+              >
+            </div>
+          </div>
+          <div class="nav-anchor" style="float: right">
+            <p class="nav-credit-p">
+              "Icon made by&nbsp;<a
+                href="https://www.flaticon.com/authors/freepik"
+                >Freepik</a
+              >&nbsp;from&nbsp;<a
+                href="http://www.flaticon.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >www.flaticon.com</a
+              >"
+            </p>
+          </div>
+          <a
+            class="nav-anchor icon"
+            href="javascript:void(0);"
+            style="font-size: 15px"
+            onclick="NavBarClick()"
+            >&#9776;</a
+          >
+        </div>
+        <!-- navbar-end -->
+      </div>
+      <div class="main-container">
+        <div class="about-page-wrapper">
+          <h2 class="h2">ABOUT</h2>
+          <br />
+          <p class="p">
+            Welcome to Dare Quiz Game, your number one source for all things.
+            We're dedicated to giving you the very best of shareable content for
+            family and friends.
+          </p>
+          <br />
+          <p class="p">
+            We provides dare and quiz challenges for your family and
+            friends,Crete your own dare or quiz and share them on any social
+            media sites and see how much they know about you.
+          </p>
+          <br />
+          <p class="p">
+            We aim to make this website easier and most shareable. If you have
+            any problem then contact us at
+            <span class="contact">contact@test.com</span> or
+            <a href="contact.html">Click Here</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function NavBarClick() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>

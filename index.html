@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Play Dare & Quiz Game with Family & Friends</title>
+    <meta
+      name="description"
+      content="Create your own quiz and dares, share it with your family & friends and see if they can top the leaderboard?"
+    />
+
+    <meta property="og:site_name" content="dare-quiz-game.com" />
+    <meta
+      property="og:title"
+      content="Play Dare & Quiz Game with Family & Friends"
+    />
+    <meta
+      property="og:description"
+      content="Create your own quiz and dares, share it with your family and friends and see if they can top the leaderboard?"
+    />
+    <meta property="og:image" content="images/ogImages/dare-quiz-game-og.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dare-quiz-game.com/" />
+
+    <link rel="canonical" href="https://dare-quiz-game.com/" />
+    <meta name="robots" content="index, follow" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+
+    <meta name="theme-color" content="#4C1686" />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="nav-container">
+        <!-- navbar -->
+        <div class="topnav" id="myTopnav">
+          <a class="nav-anchor" href="" style="padding: 0.5em 1em 0 1em"
+            ><img
+              style="border-radius: 0.1em"
+              src="images/favicon/favicon-32x32.png"
+              height="32"
+              alt=""
+          /></a>
+          <a class="nav-anchor active" href="">Home</a>
+
+          <a class="nav-anchor" href="about.html">About Us</a>
+          <a class="nav-anchor" href="privacy.html">Privacy Policy</a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Social
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a
+                class="nav-anchor"
+                href="https://www.instagram.com/dare-quiz-game/"
+                target="_blank"
+                >Instagram</a
+              >
+              <a
+                class="nav-anchor"
+                href="https://www.facebook.com/dare-quiz-game/"
+                target="_blank"
+                >Facebook</a
+              >
+            </div>
+          </div>
+          <div class="nav-anchor" style="float: right">
+            <p class="nav-credit-p">
+              "Icon made by&nbsp;<a
+                href="https://www.flaticon.com/authors/freepik"
+                >Freepik</a
+              >&nbsp;from&nbsp;<a
+                href="http://www.flaticon.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >www.flaticon.com</a
+              >"
+            </p>
+          </div>
+          <a
+            class="nav-anchor icon"
+            href="javascript:void(0);"
+            style="font-size: 15px"
+            onclick="NavBarClick()"
+            >&#9776;</a
+          >
+        </div>
+        <!-- navbar-end -->
+      </div>
+
+      <div class="main-container">
+        <ul class="games-list">
+          <a href="dare-4-friends.php">
+            <li class="game-list-data">
+              <img
+                class="img"
+                src="images/cardImages/dare-4-friends.png"
+                alt=""
+              />
+              <h2 class="title">What your Friends know about you?</h2>
+            </li>
+          </a>
+          <a href="quiz-4-friends.php">
+            <li class="game-list-data">
+              <img
+                class="img"
+                src="images/cardImages/quiz-4-friends.png"
+                alt=""
+              />
+              <h2 class="title">
+                Are Your Friends Smart Enough To Top Your Quiz?
+              </h2>
+            </li>
+          </a>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      function NavBarClick() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>
